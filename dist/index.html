@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="css/main.css?cb=1690365073048" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="alert">
+        <svg
+          class="alert-icon"
+          focusable="false"
+          aria-hidden="true"
+          viewbox="0 0 24 24"
+        >
+          <path
+            d="M11 15h2v2h-2zm0-8h2v6h-2zm.99-5C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+          ></path>
+        </svg>
+        <h3 class="alert-title">Error</h3>
+        <p class="alert-message"></p>
+      </div>
+      <div class="form-wrapper">
+        <div class="title-wrapper"><h2 class="title">Sign up</h2></div>
+        <form class="form" autofill="off">
+          <h3 class="form-title">New user?</h3>
+          <p class="form-subtitle">
+            Use the form below to create your account.
+          </p>
+          <div class="form-inner">
+            <div class="form-item fade-1">
+              <label class="form-label" for="first-name">First Name</label
+              ><input
+                class="form-input"
+                id="first-name"
+                type="text"
+                name="first-name"
+              />
+            </div>
+            <div class="form-item fade-2">
+              <label class="form-label" for="last-name">Last Name</label
+              ><input
+                class="form-input"
+                id="last-name"
+                type="text"
+                name="last-name"
+              />
+            </div>
+            <div class="form-item fade-3">
+              <label class="form-label">Nationality</label>
+              <div class="form-select select">
+                <input
+                  class="hidden"
+                  id="nationality"
+                  type="text"
+                  name="nationality"
+                />
+                <div class="select-placeholder">Nationality</div>
+                <ul class="select-list hidden" id="nationalityOptionList"></ul>
+              </div>
+            </div>
+            <div class="form-item fade-4">
+              <label class="form-label" for="email">E-mail</label
+              ><input class="form-input" id="email" type="email" name="email" />
+            </div>
+            <div class="form-item fade-5">
+              <label class="form-label">Date of Birth</label>
+              <div class="select-group">
+                <div class="form-select select">
+                  <input
+                    class="hidden"
+                    id="day"
+                    type="text"
+                    name="day"
+                    value="1"
+                  />
+                  <div class="select-placeholder">1</div>
+                  <ul
+                    class="select-list hidden"
+                    id="dateOfBirthOptionList"
+                  ></ul>
+                </div>
+                <div class="form-select select">
+                  <input
+                    class="hidden"
+                    id="month"
+                    type="text"
+                    name="month"
+                    value="January"
+                  />
+                  <div class="select-placeholder">January</div>
+                  <ul class="select-list hidden" id="monthOptionList"></ul>
+                </div>
+                <div class="form-select select">
+                  <input
+                    class="hidden"
+                    id="year"
+                    type="text"
+                    name="year"
+                    value="2023"
+                  />
+                  <div class="select-placeholder">2023</div>
+                  <ul class="select-list hidden" id="yearOptionList"></ul>
+                </div>
+              </div>
+            </div>
+            <div class="form-item fade-6">
+              <label class="form-label">Gender</label>
+              <div class="radio-group">
+                <input
+                  class="form-input"
+                  id="male"
+                  type="radio"
+                  value="Male"
+                  checked
+                  name="gender"
+                /><label class="form-label" for="male">Male</label
+                ><input
+                  class="form-input"
+                  id="female"
+                  type="radio"
+                  value="Female"
+                  name="gender"
+                /><label class="form-label" for="female">Female</label>
+              </div>
+            </div>
+            <div class="form-item fade-7">
+              <label class="form-label">Password</label
+              ><label class="password-mask" for="password"></label
+              ><input
+                class="form-input"
+                id="password"
+                type="password"
+                name="password"
+              />
+            </div>
+            <div class="form-item fade-8">
+              <label class="form-label">Confirm Password</label
+              ><label class="password-mask" for="confirm-password"></label
+              ><input
+                class="form-input"
+                id="confirm-password"
+                type="password"
+                name="confirm-password"
+              />
+            </div>
+          </div>
+          <div class="form-bottom">
+            <p class="login-text">
+              Have an account?&nbsp;<a class="login-link" href="#">Login</a>
+            </p>
+            <button class="form-button">Complete Signup</button>
+          </div>
+          <svg
+            class="form-image"
+            width="412"
+            height="412"
+            viewbox="0 0 412 412"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_11322_52)">
+              <path
+                class="bg_0"
+                d="M397 206C397 311.486 311.486 397 206 397C100.514 397 15 311.486 15 206C15 100.514 100.514 15 206 15C311.486 15 397 100.514 397 206Z"
+                stroke="#F9FAFF"
+                stroke-width="30"
+              ></path>
+              <path
+                class="bg_1"
+                d="M322 345.5C322 408.628 270.398 460 206.5 460C142.602 460 91 408.628 91 345.5C91 282.372 142.602 231 206.5 231C270.398 231 322 282.372 322 345.5Z"
+                stroke="#F9FAFF"
+                stroke-width="30"
+              ></path>
+              <path
+                class="bg_2"
+                stroke="#F9FAFF"
+                stroke-width="30"
+                d="M163,148A43,43 0,1,1 249,148A43,43 0,1,1 163,148"
+              ></path>
+            </g>
+            <defs>
+              <clippath id="clip0_11322_52">
+                <path
+                  class="bg_3"
+                  fill="white"
+                  d="M 206,0 L 206,0 A 206,206,0,0,1,412,206 L 412,206 A 206,206,0,0,1,206,412 L 206,412 A 206,206,0,0,1,0,206 L 0,206 A 206,206,0,0,1,206,0"
+                ></path>
+              </clippath>
+            </defs>
+          </svg>
+        </form>
+      </div>
+    </div>
+    <script src="js/main.min.js?cb=1690365073048"></script>
+  </body>
+</html>

@@ -1,0 +1,108 @@
+.form {
+  max-width: 485px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  margin: 38px 22px 33px 21px;
+  min-height: 409px;
+  &-wrapper {
+    display: flex;
+    background: #fff;
+    width: 100%;
+    max-width: 665px;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+  }
+
+  &-title {
+    font-size: $font-l;
+    font-weight: 500;
+    letter-spacing: -0.46px;
+  }
+
+  &-subtitle {
+    font-size: $font-m;
+    font-weight: 300;
+    margin-bottom: 20px;
+  }
+
+  &-inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    justify-content: space-between;
+  }
+
+  // Styling form item
+  &-item {
+    min-width: calc(485px / 2) - 7px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3px;
+    position: relative;
+    &.valid::after {
+      width: 8px;
+      height: 10px;
+      background: #fff url("../assets/check.svg");
+      position: absolute;
+      right: 0px;
+      bottom: 50%;
+      transform: translateY(100%);
+      content: "";
+      display: block;
+      transition: 0.2s ease-in;
+    }
+  }
+
+  &-label {
+    color: $light-text-color;
+    font-size: $font-xs;
+    font-weight: 300;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &-input {
+    border: 0;
+    border-bottom: 1px solid #f2f2f2;
+    height: 27px;
+    outline: transparent;
+    font-size: $font-m;
+    background: transparent;
+  }
+
+  &-bottom {
+    margin-top: 95px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: $font-s;
+  }
+
+  // Styling form button
+  &-button {
+    background: $primary-color;
+    color: #fff;
+    border: none;
+    padding: 7px 26px;
+    font-size: $font-m;
+    font-family: "PT Sans";
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  // Styling form background image
+  &-image {
+    position: absolute;
+    bottom: -55px;
+    right: -100px;
+    width: 410px;
+    height: 410px;
+    z-index: -1;
+  }
+}

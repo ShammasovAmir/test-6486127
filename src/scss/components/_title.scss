@@ -1,0 +1,16 @@
+.title {
+  font-size: $font-xl;
+  position: absolute;
+  bottom: 79px;
+  right: -54px;
+  color: #fff;
+  transform: rotate(-90deg);
+  letter-spacing: 0.5px;
+  font-family: "PT Sans";
+  width: 180px;
+  &-wrapper {
+    position: relative;
+    width: 137px;
+    background: $primary-color;
+  }
+}
